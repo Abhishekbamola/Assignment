@@ -27,6 +27,8 @@ This is a React application that calculates and displays reward points for a ret
 4. Running the Application
    To start the application: npm start
 
+5. Running unit cases: npm test
+
 ### Project Structure
 
 src/App.js: Main component that fetches data, calculates rewards, and renders the UI.

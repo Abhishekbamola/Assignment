@@ -5,7 +5,7 @@ import { transactionsData } from "./data";
 
 
 
-function calculatePoints(amount) {
+export function calculatePoints(amount) {
   let points = 0;
   if (amount > 100) {
     points = points+ (amount - 100) * 2;
@@ -17,7 +17,7 @@ function calculatePoints(amount) {
   return points;
 }
 
-function aggregateRewards(transactions) {
+export function aggregateRewards(transactions) {
   const monthlyRewards = {};
 
   transactions.forEach((transaction) => {

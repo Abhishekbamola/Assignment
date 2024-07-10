@@ -3,7 +3,6 @@ import { render, screen, waitForElementToBeRemoved } from '@testing-library/reac
 import App from '../App';
 import '@testing-library/jest-dom/extend-expect';
 
-// Mock the data module
 jest.mock('../data', () => ({
   transactionsData: [
     { customerId: 1, name: "Rahul", transactions: [{ date: "2024-01-10", amount: 120 }, { date: "2024-02-15", amount: 75 }, { date: "2024-03-12", amount: 200 }] },
@@ -23,4 +22,5 @@ test('displays loading message initially', () => {
   const loadingElement = screen.getByText(/Loading.../i);
   expect(loadingElement).toBeInTheDocument();
 });
+
 
